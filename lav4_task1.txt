@@ -1,0 +1,41 @@
+16 ?- house=house.
+true. (Same atoms).
+
+
+17 ?- houce=abc.
+false. (Different atoms)
+
+
+18 ?- edge(a,b)=edge(C,b)
+C = a.  (True)
+
+
+19 ?- edge(a,b)=edge(C,b).
+C = a.  (True)
+
+
+19 ?- edge(a,d)=edge(C,B).
+C = a,
+B = d.  (True)
+
+
+20 ?- edge(C,B)=edge(a,d).
+C = a,
+B = d. (True)
+
+
+21 ?- edge(A,f(g,h))=edge(a,B).
+A = a,
+B = f(g, h). (True)
+
+
+22 ?- edge(A,A)=edge(b,b).
+A = b. (True)
+
+
+23 ?- A=B, B=f.
+A = B, B = f. (True)
+
+
+24 ?- A=B, B=f, A=e.
+false.  (A would need to be both f and e)
