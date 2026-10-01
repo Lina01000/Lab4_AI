@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red217\green11\blue5;\red164\green8\blue3;}
+{\*\expandedcolortbl;;\cssrgb\c88946\c14202\c0;\cssrgb\c71055\c10387\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww34000\viewh19020\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+16 ?- house=house.\
+true. \cf2 (Same atoms)\cf0 \
+\
+17 ?- houce=abc.\
+false. \cf2 (Different atoms)\cf0 \
+\
+18 ?- edge(a,b)=edge(C,b)\
+|    .\
+C = a. \cf2 (True)\cf0 \
+\
+19 ?- edge(a,b)=edge(C,b).\
+C = a. \cf2 (True)\cf0 \
+\
+19 ?- edge(a,d)=edge(C,B).\
+C = a,\
+B = d. \cf3 (\cf2 True\cf3 )\cf0 \
+\
+20 ?- edge(C,B)=edge(a,d).\
+C = a,\
+B = d. \cf2 (True)\cf0 \
+\
+21 ?- edge(A,f(g,h))=edge(a,B).\
+A = a,\
+B = f(g, h).\cf2  (True)\cf0 \
+\
+22 ?- edge(A,A)=edge(b,b).\
+A = b. \cf2 (True)\cf0 \
+\
+23 ?- A=B, B=f.\
+A = B, B = f. \cf2 (True)\cf0 \
+\
+24 ?- A=B, B=f, A=e.\
+false. \cf2 (A would need to be both f and e)\cf0 \
+}
